@@ -1,9 +1,8 @@
 const express = require('express');
-const personRouter = require('./controllers/persons');
-
 const morgan = require('morgan');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const personRouter = require('./controllers/persons');
 const { errorHandler, endpointNotFound } = require('./utils/middleware');
 const config = require('./utils/config');
 const logger = require('./utils/logger');
